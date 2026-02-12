@@ -1,7 +1,7 @@
 import { Hono } from 'hono';
 import {
   getStudents,
-  getStudentById, // ✅ now this exists
+  getStudentById, 
   createStudent,
   updateStudent,
   deleteStudent
@@ -10,7 +10,7 @@ import {
 const router = new Hono();
 
 router.get('/', getStudents);          
-router.get('/:id', getStudentById);   // GET student by ID
+router.get('/:id', getStudentById);   
 router.post('/', createStudent);
 router.put('/:id', updateStudent);
 router.delete('/:id', deleteStudent);
