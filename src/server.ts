@@ -12,3 +12,10 @@ serve({
   fetch: app.fetch,
   port,
 })
+
+// ✅ CORS CONFIG
+app.use(cors({
+  origin: 'http://localhost:4200',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  credentials: true
+}));

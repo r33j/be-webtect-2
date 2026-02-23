@@ -17,7 +17,7 @@ app.use('*', async (c, next) => {
 
   return next();
 });
-
+export default app;
 app.get('/', (c) => c.text('Hello Hono!'));
 app.route('/students', studentsRoute);
 
